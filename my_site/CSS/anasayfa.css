@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 75rem;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: black;
+
+}
+
+
+.main {
+
+    width: 100%;
+    height: 700px;
+
+}
+
+.list {
+    width: 100%;
+    position: sticky;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: black;
+
+
+}
+
+
+
+.list a[href] {
+
+    display: block;
+    padding: 1.2rem 2rem;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    color: aqua;
+    font-weight: bold;
+
+
+}
+
+.list a[href]:hover {
+    background-color: lime;
+    color: black;
+}
+
+
+
+.footer {
+
+
+    width: 100%;
+    font-weight: 900;
+}
+
+.contact_us {
+    background-color: darkseagreen;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    height: 7rem;
+}
+
+.contact_us table {
+    padding: 0 1rem;
+    height: 100%;
+    text-align: left;
+    color: white;
+    background-color: black;
+
+}
+
+.contact_us table td:nth-child(1) {
+    /* bu ifade contact_us class'ına sahip etiketin içindeki table etiketinin 1. etikete işlem uygular  */
+    text-align: center;
+    width: 70px;
+}
+
+/* .contact_us table td[colspan=2]  */
+.social-media-container {
+    background-color: rgb(7, 107, 82);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.social-media-container a {
+    font-size: xx-large;
+    color: rgb(0, 255, 55);
+
+
+}
+
+.social-media-header {
+    color: yellow;
+    font-size: medium;
+    text-align: center;
+    flex: 0 0 3rem;
+    line-height: 3rem;
+
+}
+
+.social-media-icons {
+
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-writing {
+    background-color: darkolivegreen;
+    color: cyan;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+
+}

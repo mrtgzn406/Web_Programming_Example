@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, Murat Gözen'e Ulaşın, Murat Gözen İletişim">
+    <script src="https://kit.fontawesome.com/7cced4e37c.js" crossorigin="anonymous"></script>
+    <title>Bana Ulaşın</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: 2rem 0;
+        }
+
+        #container {
+
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        hr {
+            border: orangered solid 5px;
+
+        }
+
+
+
+        table tr td {
+            padding-right: 10px;
+            margin: 5px 0;
+            word-wrap: normal;
+
+        }
+
+        /*  bu kod ile hem form kısmındaki hem de kişisel bilgi kısmındaki td lere işlem uyguladık */
+
+
+
+
+        input,
+        select {
+
+            border: 0;
+            width: 25rem;
+            padding: 20px 10px;
+            border-bottom: 5px blue solid !important;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+
+        label {
+            font-size: large;
+
+        }
+
+        textarea {
+
+            padding: 10px;
+            border: 5px blue solid;
+            border-radius: 15px;
+            resize: none;
+            width: 100%;
+            height: 160px;
+            margin: 3px 0;
+        }
+
+        textarea:focus,
+        input:focus,
+        select:focus {
+            outline: none;
+
+        }
+
+        .button {
+            display: flex;
+        }
+
+        button {
+            display: inline-block;
+            margin: 10px auto;
+            padding: 10px 10px;
+            background-color: #15133C;
+            color: lime;
+            font-weight: bold;
+        }
+
+        button:active {
+
+            background-color: red;
+            color: azure;
+        }
+
+        /* bu kısımdan sonraki kodlar kişisel bilgi ve harita alanı içindir */
+        .personal-info {
+            background-color: bisque;
+            font-size: large;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        /* .personal-info table {
+            background-color: ;
+        } */
+
+        .personal-info td {
+            height: 60px;
+            padding-left: 40px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Benimle İletişime Geçin</h1>
+    </header>
+
+    <hr>
+    <div id="container">
+        <section class="form-section">
+            <form action="mailto:mrtgzn406@gmail.com">
+                <table>
+                    <tr>
+                        <td><label for="name">İsminiz</label></td>
+                        <td><input type="text" id="name" placeholder="İsminizi Giriniz"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="surname">Soyisminiz</label></td>
+                        <td><input type="text" id="surname" placeholder="Soyisminizi Giriniz"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">E-Posta Adresiniz</label></td>
+                        <td><input type="email" id="email" placeholder="E-Postanızı Giriniz"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="combobox">Konu Nedir ?</label></td>
+                        <td>
+                            <select name="konu" id="combobox">
+                                <option value="Yazılım">Yazılım</option>
+                                <option value="Donanım">Donanım</option>
+                                <option value="Müşteri_Hizmetleri">Müşteri Hizmetleri</option>
+                                <option value="Teknik_Servis">Teknik Servis</option>
+                                <option value="Hizmet_Kalitesi">Hizmet Kalitesi</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="file">
+                        <td><label for="file">Konuyla İlgili<br> Dosyaları Ekleyiniz</label></td>
+                        <td><input type="file" id="file" multiple></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="textarea">Eklemek İstedikleriniz</label></td>
+                        <td><textarea name="" id="textarea"
+                                placeholder="Görüş, Öneri veya Şikayetlerinizi Yazabilirsiniz"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td class="button">
+                            <button type="submit">Formu Gönder</button>
+                            <button type="reset">Formu Temizle</button>
+                        </td>
+
+                    </tr>
+
+
+
+                </table>
+            </form>
+        </section>
+        <section class="personal-info">
+            <table>
+
+                <tr>
+                    <td><i class="fa-regular fa-address-card"></i></td>
+                    <td>Mustafa Kemal Mahallesi, Ataşehir/İstanbul</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-regular fa-envelope"></i></td>
+                    <td><a href="mailto:mrtgzn406@gmail.com"
+                            style=" text-decoration: none; color: black;">mrtgzn406@gmail.com</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-phone-volume"></i></td>
+                    <td>+90 545 622 75 24</td>
+                </tr>
+
+            </table>
+            <h3 style="text-align: center;">Adresim</h4>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12044.472829178583!2d29.086735277210696!3d41.000785863018315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac8805375dffd%3A0x7fe3263b5b0aa4da!2sMustafa%20Kemal%2C%2034707%20Ata%C5%9Fehir%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1654896912185!5m2!1str!2str"
+                    width="100%" height="100%" style="border: 3px solid rgb(123, 27, 212);" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+
+    </div>
+
+
+</body>
+
+</html>
